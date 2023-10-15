@@ -10,11 +10,6 @@
       \) -1
       0))
 
-(defn match-floor
-  [coll val match]
-  (when (= val match ))
-  )
-
 
 (defn count-parens
   [input]
@@ -22,9 +17,9 @@
        (map parse-paren)
        (reductions +)))
 
-
 (defn p1 [data]
   (last (count-parens data)))
+
 
 (defn p2 [data]
   (let [matching-floor -1]
